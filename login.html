@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Login</title>
+        <link rel = "stylesheet" type = "text/css"
+            href = "login.css">
+    </head>
+    
+<body>
+    <div class = "login-page">
+        <div class = "form">
+            <form method = "POST" action = "register.html">
+                <p>
+                    <label> Email </label> <input type="email" id="email" required size="30"
+                     maxlength="30">
+                    <label> Username </label> <input type="text" id="username" required size="20"
+                    maxlength="20">
+                    <label> Password </label> <input type="password" id="password" required size="20"
+                    maxlength="20">
+                    <button type= "submit" value="submit" onclick="send()">Sign Up</button>
+                </p>
+            </form>
+        </div>
+    </div>
+    
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCG68-Gx4-UJLkq3EGcpFoekj3DqHwaKIE",
+    authDomain: "andrew-daniels-login.firebaseapp.com",
+    projectId: "andrew-daniels-login",
+    databaseURL: "https://andrew-daniels-login-default-rtdb.firebaseio.com/",
+    storageBucket: "andrew-daniels-login.appspot.com",
+    messagingSenderId: "823767736727",
+    appId: "1:823767736727:web:a8e60e0e3f92e1542a64d2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+// Get a reference to the database service
+var database = firebase.database(); 
+
+</script>
+
+<script src="login.js"></script>
+</body>
+
+
+
+
+
+
+</html>
